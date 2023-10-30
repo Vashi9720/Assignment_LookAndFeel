@@ -1,1 +1,163 @@
-<!--Your HTML code here-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Cities Health Data Project</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #007BFF, #FFA500);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: -60px;
+        }
+        
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* Different animations for navbar items */
+        .navbar a:nth-child(1):hover {
+            background-color: #555;
+            transform: scale(1.2);
+        }
+
+        .navbar a:nth-child(2):hover {
+            background-color: #555;
+            transform: skewX(20deg);
+        }
+
+        .navbar a:nth-child(3):hover {
+            background-color: #555;
+            transform: rotate(10deg);
+        }
+
+        .navbar a:nth-child(4):hover {
+            background-color: #555;
+            transform: translateY(-10px);
+        }
+
+        .info-card {
+            margin: 20px;
+            transition: transform 0.3s, box-shadow 0.5s;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border: 2px solid #007BFF;
+        }
+
+        .fa {
+            margin-right: 8px;
+            font-size: 1.2em;
+            color: #007BFF;
+            transition: color 0.3s;
+        }
+
+        .info-card:hover .fa {
+            color: #FFA500;
+        }
+
+        .tiles-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .info-card h3, .info-card p {
+            color: #333;
+        }
+
+        .row{
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html" class="animate__animated animate__fadeInLeft"><i class="fas fa-home"></i> Home</a>
+        <a href="search.html" class="animate__animated animate__fadeInLeft animate__delay-1s"><i class="fas fa-search"></i> Search Health Metrics</a>
+        <a href="create.html" class="animate__animated animate__fadeInLeft animate__delay-2s"><i class="fas fa-plus"></i> Add Data</a>
+        <a href="graph.html" class="animate__animated animate__fadeInLeft animate__delay-3s"><i class="fas fa-chart-bar"></i> Graph</a>
+        <a href="aboutus.html" class="animate__animated animate__fadeInLeft animate__delay-4s"><i class="fas fa-info-circle"></i> About Us</a>
+    </div>
+
+    <section class="hero">
+        <div class="row">
+            <h1 class="animate__animated animate__fadeInUp">Discover Health Metrics Across America's Largest Cities</h1>
+            <p class="lead animate__animated animate__fadeInUp animate__delay-1s">A groundbreaking initiative offering insights into chronic disease and health behaviors.</p>
+        </div>
+        <div class="row">
+        <div class="tiles-container">
+            <div class="info-card animate__animated animate__bounceIn">
+                <i class="fas fa-book"></i>
+                <h3>About the Project</h3>
+                <p>Unlocking insights into chronic diseases.</p>
+            </div>
+            <div class="info-card animate__animated animate__bounceIn animate__delay-1s" id="data">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Data Explorer</h3>
+                <p>Delve deep into the data.</p>
+            </div>
+            <div class="info-card animate__animated animate__bounceIn animate__delay-2s" id="methodology">
+                <i class="fas fa-flask"></i>
+                <h3>Methodology</h3>
+                <p>Understand the methodologies.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
